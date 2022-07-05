@@ -9,7 +9,7 @@ class Card
   end
 end
 
-describe Card do
+RSpec.describe Card do
   let(:card) { Card.new('Nirav', 'Kanani') } # only initialize when required (lazy-loaded)
   # let!(:card) { Card.new('Nirav', 'Kanani') } # Before each test case initialize same as before block
   # let(:x) { 1 + 1 }
@@ -31,7 +31,7 @@ describe Card do
 
   # If we want to display custom error message
   it 'has a custom error message' do
-    card.suit = 'Nonsense'
+    # card.suit = 'Nonsense'
     comparison = 'Kanani'
     expect(card.suit).to eq(comparison), "Hey, I expected #{comparison} but I got #{card.suit} instead!"
   end
