@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # subject is automatically assign as a new object same as let(if describe not string)
+# An instance of the class under test.
 RSpec.describe Hash do
   # let(:my_hash) { {} }
 
